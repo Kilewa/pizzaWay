@@ -10,11 +10,28 @@ body{
 
 .logo{
     color: #fff;
-    height: 50px;
-    line-height: 50px;
-    font-size: 24px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 40px;
     float: left;
     font-weight: bold;
+    transition: 0.6s;
+}
+
+.logo:hover{
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.bold-colored{
+    color: blue;
+    transition: 0.6s;
+}
+.bold-colored:hover{
+    cursor: pointer;
+    transition: 0.6s;
+    color: white;
 }
 
 header{
@@ -39,8 +56,8 @@ header nav ul li{
     list-style: none;
 }
 header nav ul li a{
-    height: 50px;
-    line-height: 50px;
+    height: 80px;
+    line-height: 80px;
     padding: 0 20px;
     color: black;
     text-decoration: none !important;
@@ -55,9 +72,32 @@ header nav ul li a.active{
 .menu-toggle{
     color: #fff;
     float: right;
-    line-height: 50px;
+    line-height: 80px;
     font-size: 24px;
     cursor: pointer;
     display: none;
 }
+/* info icons */
+.cart-info__icon {
+    color: brown;
+    cursor: pointer;
+}
+
+.cart-info {
+    border: 0.1rem solid #000;
+    color: #fff;
+    border-radius: 0.25rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+}
+.cart-info:hover {
+    background: #0e0404b2;
+    border-color: #fff;
+    color: #fff;
+}
+.cart-info:hover .cart-info__icon {
+    color: yellow;
+}
+  /* end of info icons */
+  
 

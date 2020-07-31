@@ -8,9 +8,9 @@
     header nav{
         position: absolute;
         width: 100%;
-        height: cal(100vh - 50px);
+        height: cal(100vh - 80px);
         background: #333;
-        top: 50px;
+        top: 80px;
         left: -100%;
         transition: 0.5s;
     }
@@ -26,5 +26,4 @@ header nav.active{
     header nav ul li a{
         border-bottom: 1px solid #fff;
     }
-
 }
