@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../assets/leather_1.png') center center;
+}
+
+.bolder-colored{
+    color: #B3B6B7;
+    font-size: 30px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+.bold-colored{
+    color: #AF9164;
+    font-size: 35px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+.fas.fa-pizza-slice{
+    color: #AF9164;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
+    background-color: #2B2118;
+    width: 100%;
+    font-family: 'Concert One', cursive;
+}
+
+.logo:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a {
+    color: #AF9164;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+}
+.nav-links a:hover{
+    color: #B3B6B7;
+    transition: 0.2s ease-in;
+}
+
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color:#B3B6B7;
+    margin: 5px;
+}
+
+/* info icons */
+.cart-info__icon {
+    color: #B3B6B7;
+    cursor: pointer;
+}
+
+.cart-info {
+    border: 0.1rem solid #AF9164;
+    color: #AF9164;
+    border-radius: 0.25rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+}
+.cart-info:hover {
+    background: #0e0404b2;
+    border-color: #B3B6B7;
+    color: #B3B6B7;
+}
+.cart-info:hover .cart-info__icon {
+    color: #AF9164;
+}
+/* end of info icons */
+
+
+.cover{
+    background-image: url('/cart-items/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 85vh;
+}
+
+.span-colored{
+    color: #f0f4f5;
+    font-size: 40px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+.spann-colored{
+    color: #AF9164;
+    font-size: 45px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+.span-color{
+    color: #f0f4f5;
+    font-size: 20px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+.spann-color{
+    color: #AF9164;
+    font-size: 25px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+
+.card{
+    width: 50%;
+    display: flex;
+    float: left;
+    margin: 20px;
+}
+
+.first-card{
+    width: 20rem;
+    background: #2b2118ed;
+    text-align: center;
+    padding: 10px;
+}
+.cover-div{
+    border: 3px ridge #AF9164;
+    margin: 30px;
+    width: 200px;
+}
+
+.second-card{
+    width: 40rem;
+    border: none;
+}
+.video__container{
+    width: 100%;
+    height: 100%;
+}
+.video__item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-text{
+    color: #f0f4f5;
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+}
+.btn{
+    color: #f0f4f5;
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+    text-align: center;
+    justify-content: center;
+    background: #0e0404b2;
+    border: 1px solid #AF9164;
+    outline: none !important;
+}
+
+.btn:hover{
+    background: #af9164ea;
+    border: 1px solid #0e0404b2;
+    color: #0e0404b2;
+}
+
+/* about */
+.about-img__container {
+    position: relative;
+}
+.span-about{
+    color: #415c62;
+    font-size: 40px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+
+.spane-color{
+    color: #AF9164;
+}
+
+.about-text{
+    font-family: 'Concert One', cursive;
+}
+.about-img__container::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.7rem;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid #AF9164;;
+    z-index: -1;
+    transition: all 1s ease-in-out;
+}
+.about-img__container:hover:before {
+    top: 0;
+    left: 0;
+}
+  /*end of  about */
