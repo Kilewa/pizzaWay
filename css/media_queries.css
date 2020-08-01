@@ -4,25 +4,31 @@
     }
 }
 @media screen and (max-width:768px){
-    .nav-links {
-        width: 50%;
-    }
+    
 
 
 @media screen and (max-width:768px){
     body{
         overflow-x: hidden;
     }
+    .bolder-colored{
+        color: #B3B6B7;
+        font-size: 20px;
+    }
+    .bold-colored{
+        color: #AF9164;
+        font-size: 25px;
+    }
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 90vh;
-        top: 8vh;
-        background-color: #2b2118c4;
+        height: 85vh;
+        top: 15vh;
+        background-color: #2B2118;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 30%;
+        width: 25%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }

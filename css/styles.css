@@ -4,17 +4,31 @@
     box-sizing: border-box;
 }
 
+
+.bolder-colored{
+    color: #B3B6B7;
+    font-size: 30px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+.bold-colored{
+    color: #AF9164;
+    font-size: 35px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+    
+}
+
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 15vh;
-    background-color: #2b2118c4;
+    background-color: #2B2118;
     width: 100%;
+    font-family: 'Concert One', cursive;
 }
 .logo:hover{
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 .nav-links{
     display: flex;
@@ -26,15 +40,15 @@ nav{
 }
 
 .nav-links a {
-    color: #B3B6B7;
+    color: #AF9164;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    transition: 0.3s ease-in;
+    transition: 0.2s ease-in;
 }
 .nav-links a:hover{
-    color: #AF9164;
-    transition: 0.3s ease-in;
+    color: #B3B6B7;
+    transition: 0.2s ease-in;
 
 }
 .burger{
@@ -57,7 +71,7 @@ nav{
 
 .cart-info {
     border: 0.1rem solid #AF9164;
-    color: #B3B6B7;
+    color: #AF9164;
     border-radius: 0.25rem;
     padding: 0.4rem 0.6rem;
     cursor: pointer;
@@ -65,7 +79,7 @@ nav{
 .cart-info:hover {
     background: #0e0404b2;
     border-color: #B3B6B7;
-    color: #F7F3E3;
+    color: #B3B6B7;
 }
 .cart-info:hover .cart-info__icon {
     color: #AF9164;
