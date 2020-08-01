@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-image: url('../assets/leather_1.png') center center;
+}
 
 .bolder-colored{
     color: #B3B6B7;
@@ -14,7 +16,11 @@
     color: #AF9164;
     font-size: 35px;
     font-family:  'beyond_the_mountainsregular', sans-serif;
-    
+}
+.fas.fa-pizza-slice{
+    color: #AF9164;
+    margin-right: 10px;
+    font-size: 30px;
 }
 
 nav{
@@ -26,6 +32,7 @@ nav{
     width: 100%;
     font-family: 'Concert One', cursive;
 }
+
 .logo:hover{
     cursor: pointer;
     opacity: 0.5;
@@ -84,4 +91,64 @@ nav{
 .cart-info:hover .cart-info__icon {
     color: #AF9164;
 }
-  /* end of info icons */
+/* end of info icons */
+
+
+.cover{
+    background-image: url('/assets/pizza-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 85vh;
+}
+
+.span-colored{
+    color: #f0f4f5;
+    font-size: 40px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+.spann-colored{
+    color: #AF9164;
+    font-size: 45px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+.span-color{
+    color: #f0f4f5;
+    font-size: 20px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+.spann-color{
+    color: #AF9164;
+    font-size: 25px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+
+.card{
+    width: 50%;
+    display: flex;
+    float: left;
+    margin: 20px;
+}
+
+.first-card{
+    width: 20rem;
+    background: #2b21188e;
+    text-align: center;
+    padding: 10px;
+}
+
+.second-card{
+    width: 30rem;
+}
+.card-text{
+    color: #f0f4f5;
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+}
+.btn{
+    color: #f0f4f5;
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+    text-align: center;
+    justify-content: center;
+}
