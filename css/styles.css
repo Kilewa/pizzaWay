@@ -96,7 +96,7 @@ nav{
 
 
 .cover{
-    background-image: url('./cart-items/bg1.jpg');
+    background-image: url('../cart-items/bg1.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
