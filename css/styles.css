@@ -4,100 +4,70 @@
     box-sizing: border-box;
 }
 
-body{
-    background: url('../assets/oriental-tiles.png');
-}
-
-.logo{
-    color: #fff;
-    height: 80px;
-    line-height: 80px;
-    font-size: 40px;
-    float: left;
-    font-weight: bold;
-    transition: 0.6s;
-}
-
-.logo:hover{
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.6s;
-}
-
-.bold-colored{
-    color: blue;
-    transition: 0.6s;
-}
-.bold-colored:hover{
-    cursor: pointer;
-    transition: 0.6s;
-    color: white;
-}
-
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 100px;
-    background: #ff57;
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
+    background-color: #2b2118c4;
     width: 100%;
 }
-
-header nav {
-    float: right;
+.logo:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
-
-header nav ul{
-    margin: 0;
-    padding: 0;
+.nav-links{
     display: flex;
+    justify-content: space-around;
+    width: 30%;
 }
-header nav ul li{
+.nav-links li{
     list-style: none;
 }
-header nav ul li a{
-    height: 80px;
-    line-height: 80px;
-    padding: 0 20px;
-    color: black;
-    text-decoration: none !important;
-    display: block;
+
+.nav-links a {
+    color: #B3B6B7;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s ease-in;
+}
+.nav-links a:hover{
+    color: #AF9164;
+    transition: 0.3s ease-in;
+
+}
+.burger{
+    display: none;
+    cursor: pointer;
 }
 
-header nav ul li a:hover,
-header nav ul li a.active{
-    color: #fff;
-    background-color: #000;
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color:#B3B6B7;
+    margin: 5px;
 }
-.menu-toggle{
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
-}
+
 /* info icons */
 .cart-info__icon {
-    color: brown;
+    color: #B3B6B7;
     cursor: pointer;
 }
 
 .cart-info {
-    border: 0.1rem solid #000;
-    color: #fff;
+    border: 0.1rem solid #AF9164;
+    color: #B3B6B7;
     border-radius: 0.25rem;
     padding: 0.4rem 0.6rem;
     cursor: pointer;
 }
 .cart-info:hover {
     background: #0e0404b2;
-    border-color: #fff;
-    color: #fff;
+    border-color: #B3B6B7;
+    color: #F7F3E3;
 }
 .cart-info:hover .cart-info__icon {
-    color: yellow;
+    color: #AF9164;
 }
   /* end of info icons */
-  
-
