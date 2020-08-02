@@ -137,11 +137,6 @@ nav{
     text-align: center;
     padding: 10px;
 }
-.cover-div{
-    border: 3px ridge #AF9164;
-    margin: 30px;
-    width: 200px;
-}
 
 .carousel-caption p{
     font-family: 'Concert One', cursive;
@@ -271,7 +266,8 @@ nav{
     color: #FFFFFF; 
     text-decoration: none;
 }
-.pos-relative { position: relative; 
+.pos-relative { 
+    position: relative; 
     z-index: 1; 
 }
 
@@ -355,6 +351,12 @@ input[type=submit]{
     font-size: 20px;
     border: none;
     outline: none;
+    transition: 0.5s ease;
+}
+input[type=submit]:hover{
+    background: #2b2118ed;
+    color: #B3B6B7;
+    transition: 0.5s ease;
 }
 
 
