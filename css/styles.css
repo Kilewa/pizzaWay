@@ -209,4 +209,105 @@ nav{
     top: 0;
     left: 0;
 }
-  /*end of  about */
+/*end of  about */
+
+
+/*RIBBONS*/
+
+.ribbon-cont{ 
+    display: inline-block; 
+    padding: 0px 30px 0px 20px; 
+    position: absolute; top: 35%; 
+    left: 4px; 
+    z-index: 1; 
+    line-height: 30px;  
+    font-size: 1.07em; 
+    color: #f4f7f8;
+}
+.ribbon-cont ,h5{
+    color: #f4f7f8;
+    font-family: 'Concert One', cursive;
+}
+.mt-5{
+    color: #f4f7f8;
+    font-family: 'Concert One', cursive;
+}
+
+.ribbon { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    z-index: -1; 
+    border: 15px solid #AF9164; 
+    border-left:  0; 
+    border-right: 15px solid transparent;  
+    width:   100%; 
+}
+.ribbon.primary{ 
+    border-color: #AF9164; 
+    border-right-color:  transparent; 
+}
+.ribbon.secondary{ 
+    border-color: #415c62; 
+    border-right-color:  transparent;  
+}
+.ribbon.white{ 
+    border-color: #AF9164; 
+    border-right-color:  transparent;  
+}
+.btn-brdr-primary { 
+    text-align: 
+    center; 
+    height: 45px; 
+    line-height: 43px; 
+    border: 1px solid #415c62; 
+    color: #B3B6B7;
+    border-radius: 2px; 
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Concert One', cursive;
+}
+
+.btn-brdr-primary:hover { 
+    background: #AF9164; 
+    color: #FFFFFF; 
+    text-decoration: none;
+}
+.pos-relative { position: relative; 
+    z-index: 1; 
+}
+
+.menu-icon{
+    text-align: center;
+    padding: 20px;
+}
+.story-area {
+    position: relative;
+    background: #fff;
+}
+
+.heading h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.menu-bg{ 
+    background: url(../cart-items/sellers-1-1600x1600.jpg)  no-repeat; 
+    background-size: cover; 
+    position: relative; 
+    z-index: 1; 
+}
+
+.menu-bg:after{ 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: -1; 
+    background: #000000d9; 
+}
+
