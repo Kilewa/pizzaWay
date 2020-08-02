@@ -143,6 +143,10 @@ nav{
     width: 200px;
 }
 
+.carousel-caption p{
+    font-family: 'Concert One', cursive;
+}
+
 .second-card{
     width: 40rem;
     border: none;
