@@ -1,32 +1,4 @@
-// navigation slide function
-
-const navSlide = () => {
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector(".nav-links");
-    const navLinks = document.querySelectorAll(".nav-links li");
-    // toggle Nav
-    burger.addEventListener("click", () => {
-        nav.classList.toggle("nav-active");
-
-      //Animate links
-        navLinks.forEach((link, index) => {
-        if (link.style.animation) {
-            link.style.animation = "";
-        } else {
-            link.style.animation = `navLinkFade 0.5s ease forwards ${
-            index / 7 + 0.5
-            }s`;
-        }
-    });
-
-      //toggle animation
-        burger.classList.toggle("toggle");
-    });
-};
-navSlide();
-
-
-    let pizzas = [
+let pizzas = [
     {
         name: 'Chicken & Mushroom',
         tag: 'Chicken & Mushroom',
@@ -153,4 +125,42 @@ function cartTotalCost(pizzas){
         localStorage.setItem("cartTotalCost", pizzas.price);
     }
 }
+
+function displayCart(){
+    let cartPizzas = localStorage.getItem('pizzasInCart');
+    cartPizzas = JSON.parse(cartPizzas);
+    let itemContainer = document.querySelector('.items');
+    let cartTotal = localStorage.getItem('cartTotalCost');
+    // console.log(cartPizzas);
+    if(cartPizzas && itemContainer){
+        
+        itemContainer.innerHTML = '';
+        Object.values(cartPizzas).map(item => {
+            itemContainer.innerHTML += `
+            <div class="items-container">
+            <i class="fas fa-times-circle"></i>
+            <img src="../cart-items/${item.tag}.jpg"
+            <span>${item.name}</span>
+            </div>
+            <div class="item-price">Kshs${item.price}.00</div>
+            <div class="item-quantity">
+            <i class="fas fa-plus-circle"></i>
+            <span>${item.inCart}</span>
+            <i class="fas fa-minus-circle"></i>
+            <div class="item-total">
+            Kshs${item.inCart * item.price}.00`
+        });
+
+        itemContainer.innerHTML += `
+        <div class="CartTotalContainer">
+        <h4 class="cartTotalTitle">
+            Cart Total
+        </h4>
+        <h4 class="cartTotalAmount">
+            Kshs${cartTotal}.00
+        </h4>`
+    }
+}
+
 onLoadCartItems()
+displayCart();

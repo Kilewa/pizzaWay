@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+html,body{
     background-image: url('../assets/leather_1.png') center center;
     overflow-x: hidden;
 }
@@ -98,7 +98,7 @@ nav{
 .cover{
     background-image: url('../assets/bg1.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-attachment: fixed;
     min-height: 91vh;
 }
@@ -287,7 +287,7 @@ nav{
 
 .menu-bg{ 
     background: url(../cart-items/sellers-1-1600x1600.jpg)  no-repeat; 
-    background-size: cover; 
+    background-size: 100%; 
     position: relative; 
     z-index: 1; 
 }
@@ -306,7 +306,7 @@ nav{
 .contact{
     background-image: url('../assets/contact.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -368,7 +368,7 @@ input[type=submit]:hover{
     font-family: 'Concert One', cursive;
     background-image: url('../assets/prism.png');
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
