@@ -37,7 +37,12 @@
         border-radius: 5px;
         z-index: 1;
     }
-
+    nav{
+        overflow: hidden;
+    }
+    header{
+        overflow: hidden;
+    }
     .nav-links li {
         opacity: 0;
     }
@@ -93,6 +98,7 @@
         width: 100%;
         margin-right: auto;
         margin-left: auto;
+        overflow-y: scroll;
     }
     .card-text{
         font-size: 16px;
